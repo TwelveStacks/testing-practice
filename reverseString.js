@@ -1,4 +1,8 @@
-function reverseString() {
-    return "dlroW olleH";
+function reverseString(string) {
+    if (string == '') {
+        return ''
+    }
+
+    return string.split("").reverse().join("");
 }
 export default reverseString
