@@ -19,3 +19,8 @@ test("Should return a reversed string. The string 'I love coding' should return 
 test("Function should reverse the string '1234567890' to '0987654321'.", () => {
     expect(reverseString('1234567890')).toBe('0987654321');
 });
+
+// Test when non string is passed. Should throw error
+test("The function should throw an error if a non-string argument is provided", () => {
+    expect(() => reverseString(123)).toThrow();
+});

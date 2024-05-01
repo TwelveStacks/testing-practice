@@ -1,8 +1,10 @@
 import capitalize from './capitalize';
 
 // Test with word hello
-test('Function that takes a string and returns it with the first character capitalized.', () => {
-    expect(capitalize("hello")).toBe("Hello");
+describe('Capitalizes a single word', () => {
+    test('Function that takes a string and returns it with the first character capitalized.', () => {
+        expect(capitalize("hello")).toBe("Hello");
+    });
 });
 
 // Test with no argument passed
